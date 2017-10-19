@@ -44,8 +44,14 @@ public class VectorHelper {
         for(int i=0;i<(v.length/2);i++){
             int tmp ;
             tmp = v[(v.length-1)-i];
-            v[(v.length-1)-i+1] = v[i] ;
+            v[(v.length-1)-i] = v[i] ;
             v[i] = tmp ;
+        }
+    }
+
+    public void vecteurModDeux(int[] v){
+        for(int i=0;i<v.length;i++){
+            v[i] /= 2 ;
         }
     }
 }
